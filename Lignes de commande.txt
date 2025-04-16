@@ -1,0 +1,119 @@
+
+LATITUDE 5410@DESKTOP-IUS0GGE MINGW64 ~
+$ cd documents
+
+LATITUDE 5410@DESKTOP-IUS0GGE MINGW64 ~/documents
+$ mkdir learn_git
+
+LATITUDE 5410@DESKTOP-IUS0GGE MINGW64 ~/documents
+$ cd learn_git
+
+LATITUDE 5410@DESKTOP-IUS0GGE MINGW64 ~/documents/learn_git
+$ touch third.txt
+
+LATITUDE 5410@DESKTOP-IUS0GGE MINGW64 ~/documents/learn_git
+$ git init
+Initialized empty Git repository in C:/Users/LATITUDE 5410/Documents/learn_git/.git/
+
+LATITUDE 5410@DESKTOP-IUS0GGE MINGW64 ~/documents/learn_git (master)
+$ git add .
+
+LATITUDE 5410@DESKTOP-IUS0GGE MINGW64 ~/documents/learn_git (master)
+$ git commit -m "adding third.txt"
+[master (root-commit) 452ce39] adding third.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+
+LATITUDE 5410@DESKTOP-IUS0GGE MINGW64 ~/documents/learn_git (master)
+$ git log
+commit 452ce399e104f14eb905752842f3ff121c878ad2 (HEAD -> master)
+Author: Yoann Eric DIBI <yoanneric@gmail.com>
+Date:   Wed Apr 16 23:16:31 2025 +0000
+
+    adding third.txt
+
+LATITUDE 5410@DESKTOP-IUS0GGE MINGW64 ~/documents/learn_git (master)
+$ touch fourth.txt
+
+LATITUDE 5410@DESKTOP-IUS0GGE MINGW64 ~/documents/learn_git (master)
+$ git add .
+
+LATITUDE 5410@DESKTOP-IUS0GGE MINGW64 ~/documents/learn_git (master)
+$ git commit -m "adding fourth.txt"
+[master be62fe4] adding fourth.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+
+LATITUDE 5410@DESKTOP-IUS0GGE MINGW64 ~/documents/learn_git (master)
+$ git rm --cached third.txt
+rm 'third.txt'
+
+LATITUDE 5410@DESKTOP-IUS0GGE MINGW64 ~/documents/learn_git (master)
+$ git add .
+
+LATITUDE 5410@DESKTOP-IUS0GGE MINGW64 ~/documents/learn_git (master)
+$ git commit -m "remonving third.txt"
+On branch master
+nothing to commit, working tree clean
+
+LATITUDE 5410@DESKTOP-IUS0GGE MINGW64 ~/documents/learn_git (master)
+$ git log
+commit be62fe43fbb4f95fbfd847969c029ee5710d3835 (HEAD -> master)
+Author: Yoann Eric DIBI <yoanneric@gmail.com>
+Date:   Wed Apr 16 23:18:57 2025 +0000
+
+    adding fourth.txt
+
+commit 452ce399e104f14eb905752842f3ff121c878ad2
+Author: Yoann Eric DIBI <yoanneric@gmail.com>
+Date:   Wed Apr 16 23:16:31 2025 +0000
+
+    adding third.txt
+
+LATITUDE 5410@DESKTOP-IUS0GGE MINGW64 ~/documents/learn_git (master)
+$ git config --global --list
+user.email=yoanneric@gmail.com
+user.name=Yoann Eric DIBI
+core.pager=cat
+
+LATITUDE 5410@DESKTOP-IUS0GGE MINGW64 ~/documents/learn_git (master)
+$ git add .
+
+LATITUDE 5410@DESKTOP-IUS0GGE MINGW64 ~/documents/learn_git (master)
+$ git commit -m "Commit vers repository"
+[master 4a5641a] Commit vers repository
+ 12 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 "Capture d'\303\251cran 2025-04-16 231105.png"
+ create mode 100644 "Capture d'\303\251cran 2025-04-16 231115.png"
+ create mode 100644 "Capture d'\303\251cran 2025-04-16 231245.png"
+ create mode 100644 "Capture d'\303\251cran 2025-04-16 231304.png"
+ create mode 100644 "Capture d'\303\251cran 2025-04-16 231341.png"
+ create mode 100644 "Capture d'\303\251cran 2025-04-16 231542.png"
+ create mode 100644 "Capture d'\303\251cran 2025-04-16 231551.png"
+ create mode 100644 "Capture d'\303\251cran 2025-04-16 231707.png"
+ create mode 100644 "Capture d'\303\251cran 2025-04-16 231758.png"
+ create mode 100644 "Capture d'\303\251cran 2025-04-16 232127.png"
+ create mode 100644 "Capture d'\303\251cran 2025-04-16 232530.png"
+ create mode 100644 "Capture d'\303\251cran 2025-04-16 232640.png"
+
+LATITUDE 5410@DESKTOP-IUS0GGE MINGW64 ~/documents/learn_git (master)
+$ git remote add origin https://github.com/YoannEric/learn_git.git
+
+LATITUDE 5410@DESKTOP-IUS0GGE MINGW64 ~/documents/learn_git (master)
+$ git push -u origin master
+Enumerating objects: 19, done.
+Counting objects: 100% (19/19), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (19/19), 181.91 KiB | 15.16 MiB/s, done.
+Total 19 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/YoannEric/learn_git/pull/new/master
+remote:
+To https://github.com/YoannEric/learn_git.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+LATITUDE 5410@DESKTOP-IUS0GGE MINGW64 ~/documents/learn_git (master)
+$
